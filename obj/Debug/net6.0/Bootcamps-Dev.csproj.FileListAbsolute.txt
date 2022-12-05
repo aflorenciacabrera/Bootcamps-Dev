@@ -1,0 +1,30 @@
+C:\Users\aflor\source\repos\Bootcamps-Dev\bin\Debug\net6.0\Bootcamps-Dev.exe
+C:\Users\aflor\source\repos\Bootcamps-Dev\bin\Debug\net6.0\Bootcamps-Dev.deps.json
+C:\Users\aflor\source\repos\Bootcamps-Dev\bin\Debug\net6.0\Bootcamps-Dev.runtimeconfig.json
+C:\Users\aflor\source\repos\Bootcamps-Dev\bin\Debug\net6.0\Bootcamps-Dev.dll
+C:\Users\aflor\source\repos\Bootcamps-Dev\bin\Debug\net6.0\Bootcamps-Dev.pdb
+C:\Users\aflor\source\repos\Bootcamps-Dev\obj\Debug\net6.0\Bootcamps-Dev.csproj.AssemblyReference.cache
+C:\Users\aflor\source\repos\Bootcamps-Dev\obj\Debug\net6.0\Bootcamps-Dev.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\aflor\source\repos\Bootcamps-Dev\obj\Debug\net6.0\Bootcamps-Dev.AssemblyInfoInputs.cache
+C:\Users\aflor\source\repos\Bootcamps-Dev\obj\Debug\net6.0\Bootcamps-Dev.AssemblyInfo.cs
+C:\Users\aflor\source\repos\Bootcamps-Dev\obj\Debug\net6.0\Bootcamps-Dev.csproj.CoreCompileInputs.cache
+C:\Users\aflor\source\repos\Bootcamps-Dev\obj\Debug\net6.0\Bootcamps-Dev.dll
+C:\Users\aflor\source\repos\Bootcamps-Dev\obj\Debug\net6.0\refint\Bootcamps-Dev.dll
+C:\Users\aflor\source\repos\Bootcamps-Dev\obj\Debug\net6.0\Bootcamps-Dev.pdb
+C:\Users\aflor\source\repos\Bootcamps-Dev\obj\Debug\net6.0\Bootcamps-Dev.genruntimeconfig.cache
+C:\Users\aflor\source\repos\Bootcamps-Dev\obj\Debug\net6.0\ref\Bootcamps-Dev.dll
+D:\Escritorio\Bootcamps-Dev 2022\Proyectos\Bootcamps-Dev\obj\Debug\net6.0\Bootcamps-Dev.csproj.AssemblyReference.cache
+D:\Escritorio\Bootcamps-Dev 2022\Proyectos\Bootcamps-Dev\obj\Debug\net6.0\Bootcamps-Dev.GeneratedMSBuildEditorConfig.editorconfig
+D:\Escritorio\Bootcamps-Dev 2022\Proyectos\Bootcamps-Dev\obj\Debug\net6.0\Bootcamps-Dev.AssemblyInfoInputs.cache
+D:\Escritorio\Bootcamps-Dev 2022\Proyectos\Bootcamps-Dev\obj\Debug\net6.0\Bootcamps-Dev.AssemblyInfo.cs
+D:\Escritorio\Bootcamps-Dev 2022\Proyectos\Bootcamps-Dev\obj\Debug\net6.0\Bootcamps-Dev.csproj.CoreCompileInputs.cache
+D:\Escritorio\Bootcamps-Dev 2022\Proyectos\Bootcamps-Dev\obj\Debug\net6.0\Bootcamps-Dev.dll
+D:\Escritorio\Bootcamps-Dev 2022\Proyectos\Bootcamps-Dev\obj\Debug\net6.0\refint\Bootcamps-Dev.dll
+D:\Escritorio\Bootcamps-Dev 2022\Proyectos\Bootcamps-Dev\obj\Debug\net6.0\Bootcamps-Dev.pdb
+D:\Escritorio\Bootcamps-Dev 2022\Proyectos\Bootcamps-Dev\bin\Debug\net6.0\Bootcamps-Dev.exe
+D:\Escritorio\Bootcamps-Dev 2022\Proyectos\Bootcamps-Dev\bin\Debug\net6.0\Bootcamps-Dev.deps.json
+D:\Escritorio\Bootcamps-Dev 2022\Proyectos\Bootcamps-Dev\bin\Debug\net6.0\Bootcamps-Dev.runtimeconfig.json
+D:\Escritorio\Bootcamps-Dev 2022\Proyectos\Bootcamps-Dev\bin\Debug\net6.0\Bootcamps-Dev.dll
+D:\Escritorio\Bootcamps-Dev 2022\Proyectos\Bootcamps-Dev\bin\Debug\net6.0\Bootcamps-Dev.pdb
+D:\Escritorio\Bootcamps-Dev 2022\Proyectos\Bootcamps-Dev\obj\Debug\net6.0\Bootcamps-Dev.genruntimeconfig.cache
+D:\Escritorio\Bootcamps-Dev 2022\Proyectos\Bootcamps-Dev\obj\Debug\net6.0\ref\Bootcamps-Dev.dll

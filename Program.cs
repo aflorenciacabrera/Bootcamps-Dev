@@ -155,17 +155,95 @@ Console.WriteLine("*************************************************************
 */
 Console.WriteLine("EJERCICIO 6");
 
-Console.WriteLine("Ingresar Long lado A");
-float A = Int32.Parse(Console.ReadLine());
-Console.WriteLine("Ingresar Long lado B");
-float B = Int32.Parse(Console.ReadLine());
-Console.WriteLine("Ingresar Long lado C");
-float C = Int32.Parse(Console.ReadLine());
+//Console.WriteLine("Ingresar Long lado A");
+//float A = Int32.Parse(Console.ReadLine());
+//Console.WriteLine("Ingresar Long lado B");
+//float B = Int32.Parse(Console.ReadLine());
+//Console.WriteLine("Ingresar Long lado C");
+//float C = Int32.Parse(Console.ReadLine());
 
-float S = (A + B + C) * 1 / 2;
-float At = ((S * (S - A)) * (S - B) * (S - C));
-Console.WriteLine("Area del triangulo " + At);
+//float S = (A + B + C) * 1 / 2;
+//float At = ((S * (S - A)) * (S - B) * (S - C));
+//Console.WriteLine("Area del triangulo " + At);
 
+        double[] lados = new double[3];
+        bool isConvert;
+        int i = 0;
+        double area = 1;
+        do
+        {
+            Console.WriteLine($"Ingrese el lado {i + 1}:");
+            isConvert = double.TryParse(Console.ReadLine(), out lados[i]);
+            i += (isConvert) ? 1 : 0;
+        } while (i < 3);
+
+        Array.Sort(lados);
+
+        if (lados[2] >= lados[0] + lados[1])
+        {
+            Console.WriteLine("no se puede formar un triángulo");
+        }
+        else
+        {
+            if ((lados[0] == lados[1]) && (lados[1] == lados[2]))
+                Console.WriteLine("El triángulo es equilátero");
+            else if ((lados[0] != lados[1]) && (lados[1] != lados[2]))
+                Console.WriteLine("El triángulo es escaleno");
+            else
+                Console.WriteLine("El triángulo es isósceles");
+
+
+            double perimetro = lados.Aggregate((sum, acu) => sum + acu);
+            Console.WriteLine("El perímetro del triángulo es {0} unidades.", perimetro);
+
+            foreach (double lado in lados)
+                area *= (perimetro / 2 - lado);
+
+            area *= perimetro / 2;
+            area = Math.Pow(area, 0.5);
+            Console.WriteLine("El área del triángulo es: {0:0.00} unidades cuadradas", area);
+        }
+
+Console.WriteLine(" ************************************************************************* ");
+
+/* 
+    *************************************************************************
+    7.Desarrolle un programa que calcule el desglose de una cantidad dada, en
+    billetes y monedas tal que se minimice la cantidad de monedas y billetes.
+    Considere las denominaciones $1000, $500, $100, $50, $20, $10, $5, $2, $1,
+    donde los últimos tres son monedas. (Por ejemplo, para $1,723 se debe
+    imprimir: “1 billete de $1000, 1 billete de $500, 1 billete de $200, 1 billete de
+    $20, 1 moneda de $2, 1 moneda de $1). Obviar los signos de billete ($) y
+    tratar todos los valores como números, para los cálculos..
+    *************************************************************************
+*/
+
+Console.WriteLine("EJERCICIO 7");
+        double dinero = 0;
+        bool isConvert2;
+        int[] billetes = { 1000, 500, 100, 50, 20, 10, 5, 2, 1 };
+        int[] cambio = new int[billetes.Length];
+
+        do
+        {
+            Console.WriteLine($"Ingrese un monto de dinero para calcular:");
+            isConvert2 = double.TryParse(Console.ReadLine(), out dinero);
+        } while (!isConvert2);
+
+        for (int ij = 0; ij < billetes.Length; ij++)
+        {
+            cambio[ij] = ((int)(dinero / billetes[ij]));
+            dinero = (dinero % billetes[ij]);
+        }
+
+        for (int ij = 0; ij < billetes.Length; ij++)
+        {
+            if (cambio[ij] != 0)
+            {
+                string tipo = (billetes[ij] > 4) ? "billete" : "moneda";
+                Console.WriteLine("se entrega {0} {2} de {1}", cambio[ij], billetes[ij], tipo);
+            }
+        }
 Console.WriteLine(" ************************************************************************* ");
 
 /* 
@@ -180,9 +258,9 @@ Console.WriteLine("EJERCICIO 8");
 Console.WriteLine("Ingresar un número: ");
 int n = Int32.Parse(Console.ReadLine());
 
-for (int i = 0; i <= n; i++)
+for (int j = 0; j <= n; j++)
 {
-    Console.WriteLine("Iteración número: " + i.ToString());
+    Console.WriteLine("Iteración número: " + j.ToString());
 }
 
 Console.WriteLine("************************************************************************* ");
@@ -193,15 +271,15 @@ Console.WriteLine("*************************************************************
     *************************************************************************
 */
 Console.WriteLine("EJERCICIO 9");
-int suma = 0;
+    int suma = 0;
 
-for (int i = 1; i <= 1; i++)
-{
-    // si se ingresa por teclado
-    Console.WriteLine("Ingresar un número: ");
-    n = Int32.Parse(Console.ReadLine());
-    suma = suma + n;
-}
+    for (int a = 1; a <= 1; a++)
+    {
+        // si se ingresa por teclado
+        Console.WriteLine("Ingresar un número: ");
+        n = Int32.Parse(Console.ReadLine());
+        suma = suma + n;
+    }
 Console.WriteLine("La suma total es de: " + suma);
 
 Console.WriteLine("************************************************************************* ");
@@ -216,7 +294,7 @@ Console.WriteLine("EJERCICIO 10");
 int num5;
 //bool multiplo_3 = false;
 
-for (int i = 1; i < 5; i++)
+for (int b = 1; b < 5; b++)
 {
     // si se ingresa por teclado
     Console.WriteLine("Ingresar un número: ");
@@ -274,8 +352,6 @@ Console.WriteLine("CONFIRME SU CONTRASEÑA");
 int cont = 1;
 while (cont <= 3)
 {
-
-
     Console.WriteLine("Ingresar contraseña: ");
     string pass1 = Console.ReadLine();
     Console.WriteLine("Repetir contraseña: ");
@@ -285,21 +361,99 @@ while (cont <= 3)
     {
         Console.WriteLine("Contraseña confirmada");
         cont = 4;
-
     }
     else if (cont == 3)
     {
-
         Console.WriteLine("Has fallado los 3 intentos");
     }
     else
     {
         Console.WriteLine("Las contraseñas no coinciden. Inténtelo de nuevo.");
-
     }
     cont = cont + 1;
 }
-
-
 Console.WriteLine("************************************************************************* ");
 
+/* 
+    *************************************************************************
+    13.Proponer al usuario que adivine un número a base de intentarlo..
+    *************************************************************************
+*/
+
+Console.WriteLine("EJERCICIO 13");
+    Random rand = new Random();
+    int random = rand.Next(0, 100);
+    Console.Write(random);
+    int numero6;
+    int ik = 0;
+    bool isConvert3 = false;
+    Console.WriteLine("Adivina un número del 1 al 100!!! ");
+    do
+    {
+        ik += 1;
+        Console.WriteLine("Ingresa tu corazonada n° {0}: ", ik);
+        isConvert3 = int.TryParse(Console.ReadLine(), out numero6);
+
+    } while ((random != numero6));
+    Console.WriteLine("adivinaste!!!");
+Console.WriteLine("************************************************************************* ");
+/* 
+    *************************************************************************
+    14.Modificar el programa anterior para que vaya dando pistas del tipo «mayor» o
+    «menor».
+    *************************************************************************
+*/
+
+Console.WriteLine("EJERCICIO 14");
+    Random rand2 = new Random();
+    int random2 = rand.Next(0, 100);
+    Console.WriteLine("numero random para salir: " + random);
+
+    string texto;
+    int numero7;
+    int il = 0;
+    bool isConvert4 = false;
+    Console.WriteLine("Adivina un número del 1 al 100!!! ");
+    do
+    {
+        i += 1;
+        Console.WriteLine("Ingresa tu corazonada n° {0}: ", il);
+        isConvert4 = int.TryParse(Console.ReadLine(), out numero7);
+        texto = (isConvert4 && numero7 > random) ? "es menor" : "es mayor";
+        if (isConvert4)
+        {
+            texto = (numero7> random) ? "es menor" : "es mayor";
+            texto = (numero7 == random) ? "el correcto!!!! ADIVINASTE!!!" : texto;
+            Console.WriteLine("El número oculto es {0}", texto);
+        }
+        else
+            Console.WriteLine("INGRESASTE CUALQUIER COSA");
+    } while ((random != numero));
+Console.WriteLine("************************************************************************* ");
+/* 
+    *************************************************************************
+    15.Crea un programa que permita sumar N números. El usu
+    *************************************************************************
+*/
+
+Console.WriteLine("EJERCICIO 15");
+    string text = "";
+    double nume;
+    bool isConverti = false;
+    double sum = 0;
+    int im = 0;
+    Console.WriteLine("Sumador de números, con la palabra fin se sale ");
+    do
+    {
+        im += 1;
+        Console.WriteLine("Ingresa tu n° {0}: ", im);
+        text = Console.ReadLine();
+        isConverti = double.TryParse(text, out nume);
+
+        if (isConverti)
+            sum += nume;
+
+
+    } while (text != "fin");
+    Console.WriteLine("la suma de todos los número dio {0}", sum);
+Console.WriteLine("************************************************************************* ");

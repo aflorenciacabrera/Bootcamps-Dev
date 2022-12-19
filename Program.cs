@@ -59,7 +59,6 @@ if (sobrante2 == 0)
 }
 else
 {
-
     Console.WriteLine(num3 + " es el doble de " + resto + " este es impar");
 }
 
@@ -432,7 +431,8 @@ Console.WriteLine("EJERCICIO 14");
 Console.WriteLine("************************************************************************* ");
 /* 
     *************************************************************************
-    15.Crea un programa que permita sumar N números. El usu
+    15.Crea un programa que permita sumar N números. El usuario decide cuándo
+    termina de introducir números al indicar la palabra ‘fin’.
     *************************************************************************
 */
 

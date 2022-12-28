@@ -316,8 +316,8 @@ namespace Bootcamps_Dev
             {
                 // si se ingresa por teclado
                 Console.WriteLine("Ingresar un número: ");
-                n = Int32.Parse(Console.ReadLine());
-                suma = suma + n;
+               int n3 = Int32.Parse(Console.ReadLine());
+                suma = suma + n3;
             }
             Console.WriteLine("La suma total es de: " + suma);
 

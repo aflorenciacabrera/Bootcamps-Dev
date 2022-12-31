@@ -1,6 +1,10 @@
 ﻿
 using Bootcamps_Dev;
 
+//  .NET - C# - Ejercicios - Clases 3
+//  Clases
+
+/* 
 /***** Ejercicio 1 */
 ClassTp1 classTp1 = new ClassTp1();
 

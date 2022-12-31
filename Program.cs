@@ -1,5 +1,5 @@
 ﻿using System; // Para ahorrar escribir System.Console.WriteLine
-using Bootcamps_Dev;
+//using Bootcamps_Dev;
 
 // Ejercicio1();
  Ejercicio2();

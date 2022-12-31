@@ -1,8 +1,11 @@
-﻿using System; // Para ahorrar escribir System.Console.WriteLine
-//using Bootcamps_Dev;
+﻿//using Bootcamps_Dev;
+
+//  .NET - C# - Ejercicios - Clases 5 y 6
+//  Arreglos y Listas
+
 
 // Ejercicio1();
- Ejercicio2();
+Ejercicio2();
 // Ejercicio3();
 // Ejercicio4();
 // Ejercicio5();

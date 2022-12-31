@@ -1,7 +1,8 @@
 ﻿//using Bootcamps_Dev;
 
-//  .NET - C# - Ejercicios - Clases 5 y 6
-//  Arreglos y Listas
+//  Guía de Ejercicios 3
+// .NET - C# - Ejercicios - Clases 5 y 6
+// Arreglos y Listas
 
 
 // Ejercicio1();

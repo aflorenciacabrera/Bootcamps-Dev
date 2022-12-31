@@ -471,7 +471,7 @@ namespace Bootcamps_Dev
             Console.WriteLine("Adivina un número del 1 al 100!!! ");
             do
             {
-                i += 1;
+                il += 1;
                 Console.WriteLine("Ingresa tu corazonada n° {0}: ", il);
                 isConvert4 = int.TryParse(Console.ReadLine(), out numero7);
                 texto = (isConvert4 && numero7 > random2) ? "es menor" : "es mayor";

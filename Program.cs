@@ -203,8 +203,7 @@ void Ejercicio5()
         Console.WriteLine();
        
     }
-   // int[,] theArray = new int[5, 10];
-   //Console.WriteLine("The array has {0} dimensions.", theArray.Rank);
+  
 }
 /***** Ejercicio 6 
 Se tiene una matriz de 5x7, donde 5 representa la semana de un mes y 7 los
